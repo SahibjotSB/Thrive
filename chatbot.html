@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <title>Chatbot</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    .chatbox-wrapper {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .message-box {
+      flex-grow: 1;
+      padding: 20px;
+    }
+    .messagebar {
+      padding: 10px;
+      background: #f1f1f1;
+    }
+    .bar-wrapper {
+      display: flex;
+    }
+    .bar-wrapper input {
+      flex-grow: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    .bar-wrapper button {
+      background-color: #06aa5e;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    .bar-wrapper button .material-symbols-rounded {
+      font-size: 20px;
+    }
+    .back-button-container {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+    }
+    .back-button {
+      background-color: #06aa5e;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chatbox-wrapper">
+    <div class="message-box">
+      <div class="chat response">
+        <img src="img/chatbot.jpg">
+        <span>Hello there! <br> 
+          How can I help you today.
+        </span>
+      </div>
+    </div>
+    <div class="messagebar">
+      <div class="bar-wrapper">
+        <input type="text" placeholder="Enter your message...">
+        <button>
+          <span class="material-symbols-rounded">
+            send
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-button-container">
+    <a href="login.html" class="back-button">Back to Main Page</a>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>

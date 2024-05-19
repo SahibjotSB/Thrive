@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#06aa5e">
+    <meta name="msapplication-navbutton-color" content="#06aa5e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Sign up | Thrive ™</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./script2.js" defer></script>
+
+    <style>
+        body {
+          background-image: url('thrive.png');
+        }
+        </style>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .greeting-page, .content-page {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+        .greeting-page h1, .content-page h1 {
+            font-size: 48px;
+        }
+        main {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+        section {
+            scroll-snap-align: start;
+        }
+        .chatbot-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 24px;
+            color: white;
+            background-color: #06aa5e;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .chatbot-button:hover {
+            background-color: #048a4a;
+        }
+        .dropdown-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .dropdown-container select {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="card-container slideUp-animation">
+            <div class="image-container">
+                <h1 class="company">Thrive <sup>&trade;</sup></h1>
+                <p class="quote">Sign up today for stock advice</p>
+                <a href="#btm" class="mobile-btm-nav">
+                    <img src="./assets/images/dbl-arrow.png" alt="">
+                </a>
+            </div>
+            <form id="signup-form" action="" method="">
+                <div class="form-container slideRight-animation">
+                    <h1 class="form-header">Get started</h1>
+        
+                    <div class="input-container">
+                        <label for="f-name"></label>
+                        <input type="text" name="f-name" id="f-name" required>
+                        <span>First name</span>
+                        <div class="error"></div>
+                    </div>
+        
+                    <div class="input-container">
+                        <label for="l-name"></label>
+                        <input type="text" name="l-name" id="l-name" required>
+                        <span>Last name</span>
+                        <div class="error"></div>
+                    </div>
+        
+                    <div class="input-container">
+                        <label for="mail"></label>
+                        <input type="email" name="mail" id="mail" required>
+                        <span>E-mail</span>
+                        <div class="error"></div>
+                    </div>
+        
+                    <div class="input-container">
+                        <label for="phone"></label>
+                        <input type="tel" name="phone" id="phone" required>
+                        <span>Phone</span>
+                        <div class="error"></div>
+                    </div>
+        
+                    <div class="input-container">
+                        <label for="user-password"></label>
+                        <input type="password" name="user-password" id="user-password" class="user-password" required>
+                        <span>Password</span>
+                        <div class="error"></div>
+                    </div>
+    
+                    <div class="input-container">
+                        <label for="user-password-confirm"></label>
+                        <input type="password" name="user-password-confirm" id="user-password-confirm" class="password-confirmation" required>
+                        <span>Confirm Password</span>
+                        <div class="error"></div>
+                    </div>
+    
+                    <div id="btm">
+                        <button type="submit" class="submit-btn">Create Account</button>
+                        <p class="btm-text">
+                            Already have an account? <span class="btm-text-highlighted">Log in</span>
+                        </p>
+                    </div>
+
+                </div>
+            </form>
+        </section>
+
+        
+
+        <section id="stock-trading" class="content-page hidden">
+
+            
+            <h1>Stock Trading</h1>
+            <div class="dropdown-container">
+                <select id="stock-select-1" name="stock-select-1">
+                    <option value="google">Google</option>
+                    <option value="apple">Apple</option>
+                    <option value="amazon">Amazon</option>
+                    <option value="microsoft">Microsoft</option>
+                    <option value="facebook">Facebook</option>
+                </select>
+                <select id="stock-select-2" name="stock-select-2">
+                    <option value="google">Google</option>
+                    <option value="apple">Apple</option>
+                    <option value="amazon">Amazon</option>
+                    <option value="microsoft">Microsoft</option>
+                    <option value="facebook">Facebook</option>
+                </select>
+                <select id="stock-select-3" name="stock-select-3">
+                    <option value="google">Google</option>
+                    <option value="apple">Apple</option>
+                    <option value="amazon">Amazon</option>
+                    <option value="microsoft">Microsoft</option>
+                    <option value="facebook">Facebook</option>
+                </select>
+                <select id="stock-select-4" name="stock-select-4">
+                    <option value="google">Google</option>
+                    <option value="apple">Apple</option>
+                    <option value="amazon">Amazon</option>
+                    <option value="microsoft">Microsoft</option>
+                    <option value="facebook">Facebook</option>
+                </select>
+                <select id="stock-select-5" name="stock-select-5">
+                    <option value="google">Google</option>
+                    <option value="apple">Apple</option>
+                    <option value="amazon">Amazon</option>
+                    <option value="microsoft">Microsoft</option>
+                    <option value="facebook">Facebook</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="portfolio" class="content-page hidden">
+            <h1>Your Portfolio</h1>
+            <div class="container">
+                <section id="portfolio">
+                    <p>View your current portfolio holdings and their performance:</p>
+                    <div class="scrollable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Stock</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Total Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>10</td>
+                                    <td>$150</td>
+                                    <td>$1500</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>10</td>
+                                    <td>$150</td>
+                                    <td>$1500</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>10</td>
+                                    <td>$150</td>
+                                    <td>$1500</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>10</td>
+                                    <td>$150</td>
+                                    <td>$1500</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>10</td>
+                                    <td>$150</td>
+                                    <td>$1500</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>10</td>
+                                    <td>$150</td>
+                                    <td>$1500</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>10</td>
+                                    <td>$150</td>
+                                    <td>$1500</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>10</td>
+                                    <td>$150</td>
+                                    <td>$1500</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>10</td>
+                                    <td>$150</td>
+                                    <td>$1500</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>10</td>
+                                    <td>$150</td>
+                                    <td>$1500</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>10</td>
+                                    <td>$150</td>
+                                    <td>$1500</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>10</td>
+                                    <td>$150</td>
+                                    <td>$1500</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>10</td>
+                                    <td>$150</td>
+                                    <td>$1500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section id="live-stocks">
+                    <h2>Live Stocks</h2>
+                    <p>Track real-time stock prices and performance:</p>
+                    <div class="scrollable">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Stock</th>
+                                    <th>Price</th>
+                                    <th>Change</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Google</td>
+                                    <td>$2800</td>
+                                    <td>+1.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Google</td>
+                                    <td>$2800</td>
+                                    <td>+1.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Google</td>
+                                    <td>$2800</td>
+                                    <td>+1.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Google</td>
+                                    <td>$2800</td>
+                                    <td>+1.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Google</td>
+                                    <td>$2800</td>
+                                    <td>+1.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Google</td>
+                                    <td>$2800</td>
+                                    <td>+1.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Google</td>
+                                    <td>$2800</td>
+                                    <td>+1.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Google</td>
+                                    <td>$2800</td>
+                                    <td>+1.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Google</td>
+                                    <td>$2800</td>
+                                    <td>+1.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Google</td>
+                                    <td>$2800</td>
+                                    <td>+1.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Google</td>
+                                    <td>$2800</td>
+                                    <td>+1.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Google</td>
+                                    <td>$2800</td>
+                                    <td>+1.5%</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="chatbot" class="content-page hidden">
+            <h1>Thrive Bot</h1>
+            <p>Interact with our ThriveBot.</p>
+            <div class="button-container">
+                <a href="chatbot.html" class="chatbot-button">Go to Chatbot</a>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <script>
+        const firstName = document.getElementById('f-name');
+        const lastName = document.getElementById('l-name');
+        const email = document.getElementById('mail');
+        const phone = document.getElementById('phone');
+        const password = document.getElementById('user-password');
+        const passwordConfirm = document.getElementById('user-password-confirm');
+        const submitBtn = document.querySelector('.submit-btn');
+        const cardContainer = document.querySelector('.card-container');
+        const greetingPage = document.querySelector('.greeting-page');
+        const userFullName = document.getElementById('greeting-text');
+        const stockTrading = document.getElementById('stock-trading');
+        const portfolio = document.getElementById('portfolio');
+        const stockPrediction = document.getElementById('stock-prediction');
+        const errorDisplayers = document.querySelectorAll('.error');
+        let count = 0;
+
+        const onValidation = (message, display, value) => {
+            message.textContent = display;
+            count += value;
+        };
+
+        firstName.addEventListener('keyup', (e) => {
+            let message = errorDisplayers[0];
+            e.target.value ? onValidation(message, '', 1) : onValidation(message, '*This field is Required', 0);
+        });
+
+        lastName.addEventListener('keyup', (e) => {
+            let message = errorDisplayers[1];
+            e.target.value ? onValidation(message, '', 1) : onValidation(message, '*This field is Required', 0);
+        });
+
+        email.addEventListener('keyup', (e) => {
+            let message = errorDisplayers[2];
+            e.target.value.includes('@') ? onValidation(message, '', 1) : onValidation(message, '*Invalid Email', 0);
+        });
+
+        phone.addEventListener('keyup', (e) => {
+            let message = errorDisplayers[3];
+            e.target.value.length >= 10 ? onValidation(message, '', 1) : onValidation(message, '*Invalid Phone Number', 0);
+        });
+
+        password.addEventListener('keyup', (e) => {
+            let message = errorDisplayers[4];
+            password.value.length >= 8 ? onValidation(message, '', 1) : onValidation(message, 'Password requires minimum 8 characters', 0);
+        });
+
+        passwordConfirm.addEventListener('keyup', (e) => {
+            let message = errorDisplayers[5];
+            password.value === e.target.value ? onValidation(message, '', 1) : onValidation(message, '*Password did not match', 0);
+        });
+
+        submitBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (count > 5) {
+                const firstNameValue = firstName.value;
+                const lastNameValue = lastName.value;
+                userFullName.textContent = `Welcome, ${firstNameValue} ${lastNameValue}`;
+                cardContainer.classList.add('hidden');
+                greetingPage.classList.remove('hidden');
+                stockTrading.classList.remove('hidden');
+                portfolio.classList.remove('hidden');
+                stockPrediction.classList.remove('hidden');
+            } else {
+                for (let i = 0; i < errorDisplayers.length; i++) {
+                    errorDisplayers[i].textContent = '*This field is Required';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
